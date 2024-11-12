@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="imgContainer">
+            <h1 class="logo">Join Us!</h1>
+            <img id="signupImg" src="./Images/Coffee.avif">
+            <div class="credits">
+                <p>Image by Nathan Dumlao on Unplash.com</p>
+            </div>
+        </div>
+        <main>
+            <div class="intro">
+                <p>Sign up <i>now</i> to order our specialty coffee, earn points with each order and enjoy big discount coupons!</p>
+                
+            </div>
+            <form id="signupForm" action="#" method="get">
+                    <legend>Sign Up</legend>
+
+                    <fieldset>
+                        <label for="firstName">First Name
+                            <input type="text" id="firstName" name="firstName" minlength="2" required>
+                        </label>
+                        <label for="lastName">Last Name
+                            <input type="text" name="lastName" id="lastName" required>
+                        </label>
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" required>
+                         </label>
+                        <label for="phoneNumber">Phone Number
+                             <input type="tel" name="phoneNumber" id="phoneNumber" pattern="^\d{10}$">
+                        </label>
+                        <label for="password">Password
+                            <input type="password" name="password" id="password" minlength="6" pattern=".*[A-Za-z].*" required>
+                        </label>
+                        <label for="confirmPassword">Confirm Password
+                        <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" pattern=".*[A-Za-z].*" required>
+                        </label>
+                    </fieldset>
+                
+            </form>
+           
+            <button id="signupBtn" type="submit" form="signupForm">Create Account</button>
+            <p>Already have an account? <button id="signinBtn" type="button">Log In</button></p>
+            
+
+
+
+        </main>
+    </div>
+
+
+</body>
+</html>
